@@ -1,0 +1,250 @@
+.App {
+  text-align: center;
+}
+
+/* src/App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #111111;
+  font-family: 'Pretendard', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 60px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111111; /* 라이트 모드 기본 색 */
+}
+
+.nav a {
+  margin-right: 28px;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* 기본 라이트 테마 */
+body {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* 다크 모드 전체 스타일 */
+.dark-mode {
+  background: #0b0b0f;
+  color: #f5f5f5;
+}
+
+/* 다크 모드 - 헤더 */
+.dark-mode .header {
+  border-bottom: 1px solid #222;
+  background: #000;
+}
+
+/* 다크 모드 - 로고/텍스트 색상 */
+.dark-mode .logo {
+  color: #f5f5f5;
+}
+
+.dark-mode .hero h2,
+.dark-mode .hero p {
+  color: #f5f5f5;
+}
+
+/* 다크 모드 - 내비 링크 */
+.dark-mode .nav a {
+  color: #dcdcdc;
+}
+
+.dark-mode .nav a:hover {
+  color: #ffffff;
+}
+
+/* 다크 모드 - 푸터 */
+.dark-mode .footer {
+  border-top: 1px solid #222;
+  color: #aaaaaa;
+}
+
+.icon-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon {
+  width: 29px;
+  height: 29px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+/* 다크 모드에서 모든 아이콘 색 반전 */
+.dark-mode .icon {
+  filter: invert(1);
+}
+
+.icon:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.nav a:first-child {
+  margin-left: 0; /* 첫 메뉴는 왼쪽 여백 제거 */
+}
+
+.nav a:hover {
+  color: #111111;
+}
+
+.main {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #111111; /* 라이트 모드에서는 진한 글씨 */
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 100px;
+  font-size: 0.85rem;
+  color: #777777;
+}
+
+/* 검색창 영역 */
+.search-bar {
+  width: 100%;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.search-bar.show {
+  height: 60px;
+}
+
+.search-bar input {
+  flex: 1;
+  height: 36px;
+  padding: 0 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  background: #fff;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 다크모드 검색창 대응 */
+.dark-mode .search-bar {
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+.dark-mode .search-bar input {
+  background: #0d0d0d;
+  color: #eee;
+  border: 1px solid #222;
+}
+
+.close-btn {
+  color: inherit;
+}
+
+/* 테마 토글 아이콘 전용 애니메이션 */
+.theme-icon {
+  transition: transform 0.45s ease, opacity 0.45s ease, filter 0.3s ease;
+}
+
+/* 라이트 모드일 때 아이콘 상태 */
+.theme-icon.light {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+/* 다크 모드일 때 아이콘 상태 */
+.theme-icon.dark {
+  transform: rotate(180deg) scale(1.1);
+  opacity: 1;
+}
+
+/* 살짝 눌리는 클릭 느낌(optional) */
+.theme-icon:active {
+  transform: scale(0.9);
+}
+
+/* CRA 기본 스타일 (필요 없으면 나중에 삭제 가능) */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
