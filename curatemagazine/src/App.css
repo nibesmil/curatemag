@@ -26,11 +26,32 @@ body, html {
   gap: 32px;
 }
 
+.nav-item .eng {
+  display: inline;
+}
+
+.nav-item .kor {
+  display: none;
+}
+
+.nav-item:hover .eng {
+  display: none;
+}
+
+.nav-item:hover .kor {
+  display: inline
+}
+
 .logo {
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #111111; /* 라이트 모드 기본 색 */
+}
+
+.logo:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .nav a {
@@ -69,7 +90,6 @@ body {
   color: #f5f5f5;
 }
 
-/* 다크 모드 - 내비 링크 */
 .dark-mode .nav a {
   color: #dcdcdc;
 }
