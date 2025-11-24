@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "category": "fashion",
+        "title": "스카쟌 붐은 온다.",
+        "editor": "ansanthesoloist",
+        "description": "세계 2차 대전이 끝난 후, 미국의 조종사들의 자켓에 일본풍 자수를 박은 것이 스카쟌의 시초",
+        "image": "/images/f_img01.jpg"
+    },
+
+    {
+        "id": 2,
+        "category": "fashion",
+        "title": "주목해야 하는 남자 스니커즈 8선",
+        "editor": "ansanthesoloist",
+        "description": ".",
+        "image": "/images/f_img02.jpg"
+    }
+
+]
