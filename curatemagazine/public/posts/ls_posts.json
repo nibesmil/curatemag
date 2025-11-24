@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "category": "lifestyle",
+        "title": "음식이 싱겁다면?",
+        "editor": "ansanthesoloist",
+        "description": "소금을 넣어서 먹으세요!",
+        "image":"/images/ls_img01.jpg"
+    },
+
+    {
+        "id": 2,
+        "category": "lifestyle",
+        "title": "두통이 생기는 원인은?",
+        "editor": "ansanthesoloist",
+        "description": ".",
+        "image": "/images/ls_img02.jpeg"
+    }
+
+
+]
