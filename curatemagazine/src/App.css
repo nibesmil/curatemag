@@ -271,6 +271,16 @@ body, html {
   box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
+.post-card .date {
+  margin: 0 16px 18px;
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.dark-mode .post-card .date {
+  color: #aaa;
+}
+
 /* Dark mode card */
 .dark-mode .post-card {
   background: #151515;
